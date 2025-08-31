@@ -522,7 +522,7 @@
 		href="https://gaz68.vip/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgaz68.vip%2F" />
 	<link rel="alternate" title="oNhúng (XML)" type="text/xml+oembed"
 		href="https://gaz68.vip/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgaz68.vip%2F&amp;format=xml" /> -->
-	
+
 	<style>
 		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
 		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -530,6 +530,7 @@
 		}
 
 		@media screen and (max-height: 1024px) {
+
 			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
 			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
 				background-image: none !important;
@@ -537,6 +538,7 @@
 		}
 
 		@media screen and (max-height: 640px) {
+
 			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
 			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
 				background-image: none !important;
@@ -546,9 +548,30 @@
 	<link rel="icon" href="./images/logo.png" sizes="32x32" />
 	<link rel="icon" href="./images/logo.png" sizes="192x192" />
 	<link rel="apple-touch-icon" href="./images/logo.png" />
+
+	<!-- Meta Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '756306847041761');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=756306847041761&ev=PageView&noscript=1" /></noscript>
+	<!-- End Meta Pixel Code -->
 </head>
 
-<body class="home page-template-default page page-id-14 wp-custom-logo unselectable elementor-default elementor-kit-5 elementor-page elementor-page-14">
+<body
+	class="home page-template-default page page-id-14 wp-custom-logo unselectable elementor-default elementor-kit-5 elementor-page elementor-page-14">
 	<main id="content" class="site-main post-14 page type-page status-publish hentry">
 		<div class="page-content">
 			<div data-elementor-type="wp-page" data-elementor-id="14" class="elementor elementor-14"
@@ -572,9 +595,8 @@
 									<div class="elementor-widget-container">
 										<a href="">
 											<img fetchpriority="high" decoding="async" width="760" height="631"
-												src="images/logo.png"
-												class="attachment-full size-full wp-image-712" alt=""
-												sizes="(max-width: 760px) 100vw, 760px" />
+												src="images/logo.png" class="attachment-full size-full wp-image-712"
+												alt="" sizes="(max-width: 760px) 100vw, 760px" />
 										</a>
 									</div>
 								</div>
@@ -980,36 +1002,36 @@
 	</style>
 
 	<script type='text/javascript'>
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					let lazyloadBackground = entry.target;
-					if (lazyloadBackground) {
-						lazyloadBackground.classList.add('e-lazyloaded');
+		const lazyloadRunObserver = () => {
+			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+			const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						let lazyloadBackground = entry.target;
+						if (lazyloadBackground) {
+							lazyloadBackground.classList.add('e-lazyloaded');
+						}
+						lazyloadBackgroundObserver.unobserve(entry.target);
 					}
-					lazyloadBackgroundObserver.unobserve(entry.target);
-				}
+				});
+			}, { rootMargin: '200px 0px 200px 0px' });
+			lazyloadBackgrounds.forEach((lazyloadBackground) => {
+				lazyloadBackgroundObserver.observe(lazyloadBackground);
 			});
-					}, {rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-			lazyloadBackgroundObserver.observe(lazyloadBackground);
-					} );
-				};
+		};
 		const events = [
-		'DOMContentLoaded',
-		'elementor/lazyload/observe',
+			'DOMContentLoaded',
+			'elementor/lazyload/observe',
 		];
-				events.forEach( ( event ) => {
+		events.forEach((event) => {
 			document.addEventListener(event, lazyloadRunObserver);
-				} );
+		});
 	</script>
 
 	<script src="./gaz68.vip/wp-content/themes/hello-elementor/assets/js/hello-frontend.minb12b.js?ver=3.1.1"
 		id="hello-theme-frontend-js"></script>
 	<script id="wccp_pro_admin_bar_ajax-js-extra">
-		var ajax_object = {"ajaxurl":"https:\/\/gaz68.vip\/wp-admin\/admin-ajax.php","link":"https:\/\/gaz68.vip\/"};
+		var ajax_object = { "ajaxurl": "https:\/\/gaz68.vip\/wp-admin\/admin-ajax.php", "link": "https:\/\/gaz68.vip\/" };
 	</script>
 	<script src="./gaz68.vip/wp-content/plugins/wccp-pro/js/admin_bar_ajax9704.js?ver=6.7.1"
 		id="wccp_pro_admin_bar_ajax-js"></script>
@@ -1022,16 +1044,16 @@
 	<script src="./gaz68.vip/wp-includes/js/dist/hooks.min4fdd.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
 	<script src="./gaz68.vip/wp-includes/js/dist/i18n.minc33c.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
 	<script id="wp-i18n-js-after">
-		wp.i18n.setLocaleData( {'text direction\u0004ltr': [ 'ltr' ] } );
+		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
 	</script>
 	<script id="elementor-pro-frontend-js-before">
-		var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/gaz68.vip\/wp-admin\/admin-ajax.php","nonce":"d8b2a7808c","urls":{"assets":"https:\/\/gaz68.vip\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/gaz68.vip\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"vi","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/gaz68.vip\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+		var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/gaz68.vip\/wp-admin\/admin-ajax.php", "nonce": "d8b2a7808c", "urls": { "assets": "https:\/\/gaz68.vip\/wp-content\/plugins\/elementor-pro\/assets\/", "rest": "https:\/\/gaz68.vip\/wp-json\/" }, "settings": { "lazy_load_background_images": true }, "popup": { "hasPopUps": false }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" }, "x-twitter": { "title": "X" }, "threads": { "title": "Threads" } }, "facebook_sdk": { "lang": "vi", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/gaz68.vip\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
 	</script>
 	<script src="./gaz68.vip/wp-content/plugins/elementor-pro/assets/js/frontend.min401f.js?ver=3.25.4"
 		id="elementor-pro-frontend-js"></script>
 	<script src="./gaz68.vip/wp-includes/js/jquery/ui/core.minb37e.js?ver=1.13.3" id="jquery-ui-core-js"></script>
 	<script id="elementor-frontend-js-before">
-		var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Chia s\u1ebb tr\u00ean Facebook","shareOnTwitter":"Chia s\u1ebb tr\u00ean Twitter","pinIt":"Ghim n\u00f3","download":"T\u1ea3i xu\u1ed1ng","downloadImage":"T\u1ea3i h\u00ecnh \u1ea3nh","fullscreen":"To\u00e0n m\u00e0n h\u00ecnh","zoom":"Thu ph\u00f3ng","share":"Chia s\u1ebb","playVideo":"Ph\u00e1t video","previous":"Quay v\u1ec1","next":"Ti\u1ebfp theo","close":"\u0110\u00f3ng","a11yCarouselWrapperAriaLabel":"Carousel | Cu\u1ed9n ngang: M\u0169i t\u00ean Tr\u00e1i & Ph\u1ea3i","a11yCarouselPrevSlideMessage":"Slide tr\u01b0\u1edbc","a11yCarouselNextSlideMessage":"Slide ti\u1ebfp theo","a11yCarouselFirstSlideMessage":"\u0110\u00e2y l\u00e0 slide \u0111\u1ea7u ti\u00ean","a11yCarouselLastSlideMessage":"\u0110\u00e2y l\u00e0 slide cu\u1ed1i c\u00f9ng","a11yCarouselPaginationBulletMessage":"\u0110i \u0111\u1ebfn slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Ch\u1ebf \u0111\u1ed9 d\u1ecdc di \u0111\u1ed9ng","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Ch\u1ebf \u0111\u1ed9 ngang di \u0111\u1ed9ng","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet D\u1ecdc","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Ngang","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Trang r\u1ed9ng","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.25.10","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"launchpad-checklist":true},"urls":{"assets":"https:\/\/gaz68.vip\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/gaz68.vip\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/gaz68.vip\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"7e16a028b6"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_footer_logo_type":"logo"},"post":{"id":14,"title":"GAZ68.VIP%20%F0%9F%8E%96%EF%B8%8F%20TRANG%20CH%E1%BB%A6%20CH%C3%8DNH%20TH%E1%BB%A8C%20%7C%20CSKH%2024%2F7","excerpt":"","featuredImage":false}};
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Chia s\u1ebb tr\u00ean Facebook", "shareOnTwitter": "Chia s\u1ebb tr\u00ean Twitter", "pinIt": "Ghim n\u00f3", "download": "T\u1ea3i xu\u1ed1ng", "downloadImage": "T\u1ea3i h\u00ecnh \u1ea3nh", "fullscreen": "To\u00e0n m\u00e0n h\u00ecnh", "zoom": "Thu ph\u00f3ng", "share": "Chia s\u1ebb", "playVideo": "Ph\u00e1t video", "previous": "Quay v\u1ec1", "next": "Ti\u1ebfp theo", "close": "\u0110\u00f3ng", "a11yCarouselWrapperAriaLabel": "Carousel | Cu\u1ed9n ngang: M\u0169i t\u00ean Tr\u00e1i & Ph\u1ea3i", "a11yCarouselPrevSlideMessage": "Slide tr\u01b0\u1edbc", "a11yCarouselNextSlideMessage": "Slide ti\u1ebfp theo", "a11yCarouselFirstSlideMessage": "\u0110\u00e2y l\u00e0 slide \u0111\u1ea7u ti\u00ean", "a11yCarouselLastSlideMessage": "\u0110\u00e2y l\u00e0 slide cu\u1ed1i c\u00f9ng", "a11yCarouselPaginationBulletMessage": "\u0110i \u0111\u1ebfn slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Ch\u1ebf \u0111\u1ed9 d\u1ecdc di \u0111\u1ed9ng", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Ch\u1ebf \u0111\u1ed9 ngang di \u0111\u1ed9ng", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet D\u1ecdc", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Ngang", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Trang r\u1ed9ng", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.25.10", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "e_nested_atomic_repeaters": true, "e_optimized_control_loading": true, "e_onboarding": true, "e_css_smooth_scroll": true, "theme_builder_v2": true, "hello-theme-header-footer": true, "home_screen": true, "e_element_cache": true, "link-in-bio": true, "floating-buttons": true, "launchpad-checklist": true }, "urls": { "assets": "https:\/\/gaz68.vip\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/gaz68.vip\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/gaz68.vip\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "7e16a028b6" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "body_background_background": "classic", "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description", "hello_header_logo_type": "logo", "hello_footer_logo_type": "logo" }, "post": { "id": 14, "title": "GAZ68.VIP%20%F0%9F%8E%96%EF%B8%8F%20TRANG%20CH%E1%BB%A6%20CH%C3%8DNH%20TH%E1%BB%A8C%20%7C%20CSKH%2024%2F7", "excerpt": "", "featuredImage": false } };
 	</script>
 	<script src="./gaz68.vip/wp-content/plugins/elementor/assets/js/frontend.min18be.js?ver=3.25.10"
 		id="elementor-frontend-js"></script>
